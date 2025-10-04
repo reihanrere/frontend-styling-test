@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "TSTAR Pro";
+    src: url("/fonts/T-StarPro-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TSTAR Pro";
+    src: url("/fonts/T-StarPro-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TSTAR Pro";
+    src: url("/fonts/T-StarPro-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Trebuchet MS";
+    src: url("/fonts/trebuc.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
