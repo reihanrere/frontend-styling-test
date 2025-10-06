@@ -35,7 +35,7 @@ export function ArrowLink({
             <span className="text-tstar-16 text-nowrap">{text}</span>
 
             <ArrowIcon
-                className="w-[24px] h-[16px] mb-1 translate-y-[1px] transition-transform duration-200 group-hover:translate-x-1"
+                className="w-[24px] h-[24px] mb-1 translate-y-[1px] transition-transform duration-200 group-hover:translate-x-1"
             />
         </Link>
     )

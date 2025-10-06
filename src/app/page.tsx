@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/Home/HeroSection";
 import ExpertiseSection from "@/components/Home/ExpertiseSection";
 import QuoteSection from "@/components/Home/QuoteSection";
+import UpcomingActivitiesSection from "@/components/Home/UpcomingActivitiesSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
               <HeroSection />
               <ExpertiseSection />
               <QuoteSection />
+              <UpcomingActivitiesSection />
           </main>
       </>
   );
