@@ -11,6 +11,7 @@
   --dark-red: #600000;
   --dark-grey: #504B49;
   --white-80: #FFFFFFCC;
+  --background-grey: #F5F5F5;
 }
 
 @theme inline {
@@ -51,6 +52,9 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --container-padding: 1rem;
+  --container-max-width: 1280px;
+  --container-fluid-max-width: 1250px;
 }
 
 :root {
@@ -131,71 +135,100 @@
   }
 }
 
-/*  TSTAR FONT */
+@layer utilities {
+  .container {
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+    max-width: var(--container-max-width);
+  }
 
-.text-tstar-72 {
-  font-family: var(--font-tstar-pro), sans-serif;
-  font-size: 72px;
-}
+  .text-brand-light-red {
+    color: var(--light-red);
+  }
 
-.text-tstar-52 {
-  font-family: var(--font-tstar-pro), sans-serif;
-  font-size: 52px;
-}
+  .text-brand-mid-red {
+    color: var(--mid-red);
+  }
 
-.text-tstar-48 {
-  font-family: var(--font-tstar-pro), sans-serif;
-  font-size: 48px;
-}
+  .text-brand-dark-red {
+    color: var(--dark-red);
+  }
 
-.text-tstar-42 {
-  font-family: var(--font-tstar-pro), sans-serif;
-  font-size: 42px;
-}
+  .text-brand-dark-grey {
+    color: var(--dark-grey);
+  }
 
-.text-tstar-36 {
-  font-family: var(--font-tstar-pro), sans-serif;
-  font-size: 36px;
-}
+  .text-brand-white-80 {
+    color: var(--white-80);
+  }
 
-.text-tstar-28 {
-  font-family: var(--font-tstar-pro), sans-serif;
-  font-size: 28px;
-}
 
-.text-tstar-24 {
-  font-family: var(--font-tstar-pro), sans-serif;
-  font-size: 24px;
-}
+  /*  TSTAR FONT */
 
-.text-tstar-18 {
-  font-family: var(--font-tstar-pro), sans-serif;
-  font-size: 18px;
-}
+  .text-tstar-72 {
+    font-family: var(--font-tstar-pro), sans-serif;
+    font-size: 72px;
+  }
 
-.text-tstar-16 {
-  font-family: var(--font-tstar-pro), sans-serif;
-  font-size: 16px;
-}
+  .text-tstar-52 {
+    font-family: var(--font-tstar-pro), sans-serif;
+    font-size: 52px;
+  }
 
-/* Trebuchet  */
+  .text-tstar-48 {
+    font-family: var(--font-tstar-pro), sans-serif;
+    font-size: 48px;
+  }
 
-.text-trebuchet-20 {
-  font-family: var(--font-trebuchet), sans-serif;
-  font-size: 20px;
-}
+  .text-tstar-42 {
+    font-family: var(--font-tstar-pro), sans-serif;
+    font-size: 42px;
+  }
 
-.text-trebuchet-16 {
-  font-family: var(--font-trebuchet), sans-serif;
-  font-size: 16px;
-}
+  .text-tstar-36 {
+    font-family: var(--font-tstar-pro), sans-serif;
+    font-size: 36px;
+  }
 
-.text-trebuchet-14 {
-  font-family: var(--font-trebuchet), sans-serif;
-  font-size: 14px;
-}
+  .text-tstar-28 {
+    font-family: var(--font-tstar-pro), sans-serif;
+    font-size: 28px;
+  }
 
-.text-trebuchet-13 {
-  font-family: var(--font-trebuchet), sans-serif;
-  font-size: 13px;
+  .text-tstar-24 {
+    font-family: var(--font-tstar-pro), sans-serif;
+    font-size: 24px;
+  }
+
+  .text-tstar-18 {
+    font-family: var(--font-tstar-pro), sans-serif;
+    font-size: 18px;
+  }
+
+  .text-tstar-16 {
+    font-family: var(--font-tstar-pro), sans-serif;
+    font-size: 16px;
+  }
+
+  /* Trebuchet  */
+
+  .text-trebuchet-20 {
+    font-family: var(--font-trebuchet), sans-serif;
+    font-size: 20px;
+  }
+
+  .text-trebuchet-16 {
+    font-family: var(--font-trebuchet), sans-serif;
+    font-size: 16px;
+  }
+
+  .text-trebuchet-14 {
+    font-family: var(--font-trebuchet), sans-serif;
+    font-size: 14px;
+  }
+
+  .text-trebuchet-13 {
+    font-family: var(--font-trebuchet), sans-serif;
+    font-size: 13px;
+  }
 }

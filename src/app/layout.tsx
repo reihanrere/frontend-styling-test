@@ -5,9 +5,9 @@ import localFont from 'next/font/local'
 
 const tstarPro = localFont({
     src: [
-        { path: "../assets/fonts/T-StarPro-Light.woff", weight: "300", style: "normal" },
-        { path: "../assets/fonts/T-StarPro-Regular.woff", weight: "400", style: "normal" },
-        { path: "../assets/fonts/T-StarPro-Bold.woff", weight: "700", style: "normal" },
+        { path: "../../public/assets/fonts/T-StarPro-Light.woff", weight: "300", style: "normal" },
+        { path: "../../public/assets/fonts/T-StarPro-Regular.woff", weight: "400", style: "normal" },
+        { path: "../../public/assets/fonts/T-StarPro-Bold.woff", weight: "700", style: "normal" },
     ],
     variable: "--font-tstar-pro",
     display: "swap",
@@ -15,7 +15,7 @@ const tstarPro = localFont({
 
 const trebuchetMS = localFont({
     src: [
-        { path: "../assets/fonts/trebuc.ttf", weight: "400", style: "normal" },
+        { path: "../../public/assets/fonts/trebuc.ttf", weight: "400", style: "normal" },
     ],
     variable: "--font-trebuchet",
     display: "swap",
