@@ -1,6 +1,9 @@
 import React from 'react';
 
-const ExecutiveIcon = (props) => {
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+}
+
+const ExecutiveIcon = (props: IconProps) => {
     return (
         <svg
             width="56"

@@ -1,6 +1,9 @@
 import React from 'react';
 
-const DiagnosticIcon = (props) => {
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+}
+
+const DiagnosticIcon = (props: IconProps) => {
     return (
         <svg
             width="56"

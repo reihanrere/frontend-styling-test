@@ -1,6 +1,10 @@
 import React from 'react';
 
-const LearningIcon = (props) => {
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+}
+
+
+const LearningIcon = (props: IconProps) => {
     return (
         <svg
             width="56"

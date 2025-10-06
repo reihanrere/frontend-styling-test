@@ -1,22 +1,9 @@
 "use client"
 
 import React from "react"
-import Image from "next/image"
 import { cn } from "@/lib/utils"
 import ArrowIcon from "@/components/Icons/ArrowIcon"
-
-interface BubbleBackgroundProps {
-    className?: string
-}
-
-const BubbleBackground = ({ className }: BubbleBackgroundProps) => (
-    <div
-        className={cn(
-            "absolute rounded-full bg-[var(--dark-red)] opacity-30",
-            className
-        )}
-    />
-)
+import BubbleBackground from "@/components/Home/BubbleBackground";
 
 interface ExpertiseCardProps {
     title: string

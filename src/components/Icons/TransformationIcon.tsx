@@ -1,6 +1,10 @@
 import React from 'react';
 
-const TransformationIcon = (props) => {
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+}
+
+
+const TransformationIcon = (props: IconProps) => {
     return (
         <svg
             width="56"

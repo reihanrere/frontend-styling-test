@@ -1,6 +1,10 @@
 import React from 'react';
 
-const KlobilityIcon = (props) => {
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+}
+
+
+const KlobilityIcon = (props: IconProps) => {
     return (
         <svg
             width="56"
