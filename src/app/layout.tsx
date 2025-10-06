@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from 'next/font/local'
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const tstarPro = localFont({
     src: [
@@ -38,6 +38,7 @@ export default function RootLayout({
               style={{fontFamily: "var(--font-tstar-pro), var(--font-trebuchet), sans-serif"}}
           >
             {children}
+            <ScrollToTopButton />
           </body>
       </html>
   );

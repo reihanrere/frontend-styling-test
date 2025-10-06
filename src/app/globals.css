@@ -210,6 +210,11 @@
     font-size: 16px;
   }
 
+  .text-tstar-14 {
+    font-family: var(--font-tstar-pro), sans-serif;
+    font-size: 14px;
+  }
+
   /* Trebuchet  */
 
   .text-trebuchet-20 {

@@ -2,6 +2,7 @@ import React from 'react';
 import {ArrowLink} from "@/components/ArrowLink";
 import Image from "next/image";
 import ArrowIcon from "@/components/Icons/ArrowIcon";
+import {cn} from "@/lib/utils";
 
 const UpcomingActivitiesSection = () => {
     const activities = [
@@ -50,7 +51,10 @@ const UpcomingActivitiesSection = () => {
                         {activities.map((activity, index) => (
                             <div
                                 key={index}
-                                className={"w-full grid grid-cols-1 md:grid-cols-[150px_1fr] border-b-[1px] border-gray-200 pt-2 mt-1 pb-8 hover:cursor-pointer"}>
+                                className={cn(
+                                    "w-full grid grid-cols-1 md:grid-cols-[150px_1fr] pt-2 mt-1 pb-8 hover:cursor-pointer",
+                                    activities.length === index+1 ? "" : "border-b-[1px] border-gray-200"
+                                )}>
                                 <div className={"flex flex-col gap-2"}>
                                     <h4 className={"text-trebuchet-14 text-[var(--mid-red)] font-normal"}>
                                         {activity.type}
