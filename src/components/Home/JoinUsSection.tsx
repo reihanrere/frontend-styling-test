@@ -4,7 +4,7 @@ import { ArrowLink } from '@/components/ArrowLink'
 const JoinUsSection = () => {
     return (
         <section
-            className="relative w-full h-[600px] mt-16 flex flex-col justify-end text-white bg-cover bg-center"
+            className="relative w-full h-[600px] flex flex-col justify-end text-white bg-cover bg-center"
             style={{ backgroundImage: "url('/assets/images/work-ddi.png')" }}
         >
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />

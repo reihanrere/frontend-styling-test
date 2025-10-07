@@ -31,11 +31,18 @@ const MENU = [
     { title: "Career", link: "/career" },
 ];
 
+interface NavbarProps {
+
+}
+
 export default function Navbar() {
     const pathname = usePathname();
 
     return (
-        <nav className="fixed top-0 left-0 z-50 w-full bg-gradient-to-b from-black/90 to-transparent backdrop-blur-sm">
+        <nav className={cn(
+            "fixed top-0 left-0 z-50 w-full",
+            "bg-gradient-to-b from-black/80 via-black/60 to-transparent"
+        )}>
             <div className="container mx-auto flex items-center justify-between py-4 px-6">
                 <Link href="/" className="flex items-center">
                     <Image

@@ -10,7 +10,7 @@ const HeroSection = () => {
 
     return (
         <section
-            className="relative flex min-h-[700px] flex-col justify-end bg-cover bg-center text-white"
+            className="relative flex min-h-screen flex-col justify-end bg-cover bg-center text-white"
             style={{ backgroundImage: "url('/assets/images/home-hero.png')" }}
         >
             <div className="container px-6 py-20 sm:px-10 md:px-16 lg:px-20">
@@ -35,7 +35,7 @@ const HeroSection = () => {
                 <div className={"bg-white flex-grow"}>
                 </div>
                 <div className={"relative w-full md:max-w-[1250px] flex flex-col-reverse md:flex-row"}>
-                    <div className={"rotate-90 absolute hidden md:block -left-[102px] top-[72px] "}>
+                    <div className={"rotate-90 absolute hidden md:block -left-[102px] top-[52px] "}>
                         <ArrowLink href="#" text="Discover" variant="lightGrey"/>
                     </div>
                     <div className={"grid w-full grid-cols-1 gap-8 bg-white px-6 py-6 md:w-[58%] md:grid-cols-3 md:gap-4 md:py-6"}>

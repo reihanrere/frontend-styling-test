@@ -32,7 +32,7 @@ const Footer = () => {
                         />
                     </div>
                 </div>
-                <div className={"flex w-full gap-3"}>
+                <div className={"flex justify-center w-full gap-3"}>
                     <div>
                         <Image
                             src={"/assets/icons/ic_facebook.svg"}

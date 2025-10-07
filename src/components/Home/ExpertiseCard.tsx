@@ -4,6 +4,7 @@ import React from "react"
 import { cn } from "@/lib/utils"
 import ArrowIcon from "@/components/Icons/ArrowIcon"
 import BubbleBackground from "@/components/Home/BubbleBackground";
+import Image from "next/image";
 
 interface ExpertiseCardProps {
     title: string
@@ -21,26 +22,29 @@ const ExpertiseCard = ({
     return (
         <div
             className={cn(
-                "h-[379px] relative flex overflow-hidden text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl",
+                "h-[300px] relative flex overflow-hidden text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl",
                 !withBackgroundImage && "bg-[var(--mid-red)]"
             )}
         >
             {withBackgroundImage && (
                 <>
-                    <div
-                        className="absolute inset-0 bg-cover bg-center"
-                        style={{
-                            backgroundImage: `url(/assets/images/meet-expertise.png)`
-                        }}
-                    />
-                    <div className="absolute inset-0 bg-black/40 z-[1]" />
+                    <div className="absolute inset-0">
+                        <Image
+                            src="/assets/images/meet-expertise-2.jpg"
+                            alt="meet-expertise"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+
+                    <div className="absolute inset-0 bg-black/40 z-[1]"/>
                 </>
             )}
 
             {!withBackgroundImage && (
                 <>
-                    <BubbleBackground className="-top-[100px] -right-[50px] w-[407px] h-[407px]" />
-                    <BubbleBackground className="-bottom-[300px] -left-[140px] w-[552px] h-[552px]" />
+                    <BubbleBackground className="-top-[100px] -right-[50px] w-[407px] h-[407px]"/>
+                    <BubbleBackground className="-bottom-[300px] -left-[140px] w-[552px] h-[552px]"/>
                 </>
             )}
 
@@ -51,7 +55,7 @@ const ExpertiseCard = ({
                 </div>
 
                 <div className="flex justify-end">
-                    <ArrowIcon className="text-white transition-transform duration-300 group-hover:translate-x-1" />
+                    <ArrowIcon className="text-white transition-transform duration-300 group-hover:translate-x-1"/>
                 </div>
             </div>
         </div>
