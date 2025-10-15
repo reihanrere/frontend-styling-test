@@ -1,14 +1,17 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    webpack(config) {
-        const fileLoaderRule = config.module.rules.find((rule) =>
-            rule.test?.test?.('.svg')
-        );
+import type { NextConfig } from 'next'
+import type { Configuration } from 'webpack';
+
+const nextConfig: NextConfig = {
+    webpack(config: Configuration) {
+        const fileLoaderRule = (config.module?.rules as any[])?.find((rule) =>
+            rule?.test?.test?.('.svg')
+        )
+
         if (fileLoaderRule) {
-            fileLoaderRule.exclude = /\.svg$/i;
+            fileLoaderRule.exclude = /\.svg$/i
         }
 
-        config.module.rules.push({
+        config.module?.rules?.push({
             test: /\.svg$/i,
             issuer: /\.[jt]sx?$/,
             use: [
@@ -25,10 +28,10 @@ const nextConfig = {
                     },
                 },
             ],
-        });
+        })
 
-        return config;
+        return config
     },
-};
+}
 
-export default nextConfig;
+export default nextConfig
